@@ -1,6 +1,6 @@
 {
-  "name": "Sarte Global — Goedkopewebsitelatenmaken",
-  "short_name": "Sarte Global",
+  "name": "Sarte Global",
+  "short_name": "Sarte",
   "description": "Goedkope, professionele websites voor ondernemers en bedrijven in Nederland.",
   "lang": "nl-NL",
   "id": "/",
@@ -9,28 +9,28 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#0D0D0D",
-  "background_color": "#0D0D0D",
+  "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png?v=2",
+      "src": "/favicon/android-chrome-192x192.png?v=3",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/android-chrome-512x512.png?v=2",
+      "src": "/favicon/android-chrome-512x512.png?v=3",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/maskable-icon-192x192.png?v=2",
+      "src": "/favicon/maskable-icon-192x192.png?v=3",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
-      "src": "/maskable-icon-512x512.png?v=2",
+      "src": "/favicon/maskable-icon-512x512.png?v=3",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

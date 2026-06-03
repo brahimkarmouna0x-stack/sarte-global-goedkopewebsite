@@ -19,7 +19,7 @@ export const TRUST_LINE =
   "Goedkopewebsitelatenmaken is een dienst van Sarte Global." as const;
 
 export const NAV_LINKS = [
-  { label: "Sarte Global", href: "/" },
+  { label: "Laten maken", href: "/" },
   { label: "Diensten", href: "#services" },
   { label: "Werk", href: "#work" },
   { label: "Proces", href: "#process" },

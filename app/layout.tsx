@@ -112,20 +112,30 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "any" },
-      { url: "/favicon-16x16.png?v=2", type: "image/png", sizes: "16x16" },
-      { url: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-48x48.png?v=2", type: "image/png", sizes: "48x48" },
-      { url: "/favicon-64x64.png?v=2", type: "image/png", sizes: "64x64" },
+      { url: "/favicon/favicon.ico?v=3", sizes: "any" },
+      { url: "/favicon/favicon-16x16.png?v=3", type: "image/png", sizes: "16x16" },
+      { url: "/favicon/favicon-32x32.png?v=3", type: "image/png", sizes: "32x32" },
+      { url: "/favicon/favicon-48x48.png?v=3", type: "image/png", sizes: "48x48" },
+      { url: "/favicon/android-chrome-192x192.png?v=3", type: "image/png", sizes: "192x192" },
+      { url: "/favicon/android-chrome-512x512.png?v=3", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: ["/favicon.ico?v=2"],
+    shortcut: ["/favicon/favicon.ico?v=3"],
     apple: [
-      { url: "/apple-touch-icon.png?v=2", type: "image/png", sizes: "180x180" },
+      { url: "/favicon/apple-touch-icon-152x152.png?v=3", type: "image/png", sizes: "152x152" },
+      { url: "/favicon/apple-touch-icon-167x167.png?v=3", type: "image/png", sizes: "167x167" },
+      { url: "/favicon/apple-touch-icon.png?v=3", type: "image/png", sizes: "180x180" },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/favicon/safari-pinned-tab.svg?v=3",
+        color: "#C8A848",
+      },
     ],
   },
   other: {
     "msapplication-TileColor": SITE.themeColor,
-    "msapplication-TileImage": "/mstile-150x150.png?v=2",
+    "msapplication-TileImage": "/favicon/mstile-144x144.png?v=3",
     "msapplication-config": "/browserconfig.xml",
   },
   formatDetection: {
