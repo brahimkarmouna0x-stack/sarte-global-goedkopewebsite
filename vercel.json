@@ -4,7 +4,6 @@
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "nodeVersion": "22.x",
   "git": {
     "deploymentEnabled": {
       "main": true

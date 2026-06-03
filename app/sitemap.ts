@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { SERVICES } from "@/constants";
 
-const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
+const SITE_URL = "https://groeimetwebdesign.nl";
 const LAST_MODIFIED = "2026-06-03";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,6 +24,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
     priority: 0.8,
   }));
+
+  // No individual journal article pages exist yet — only the journal listing page.
+  // Add journal/[slug] entries here when individual article pages are created.
 
   return [...staticPages, ...servicePages];
 }

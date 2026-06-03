@@ -16,7 +16,7 @@ export const SITE = {
 } as const satisfies SiteMeta;
 
 export const TRUST_LINE =
-  "Goedkopewebsitelatenmaken is een dienst van Sarte Global." as const;
+  "Goed kope website laten maken is een dienst van Sarte Global." as const;
 
 export const NAV_LINKS = [
   { label: "Laten maken", href: "/" },
@@ -38,7 +38,7 @@ export const HERO = {
   title: [
     {
       words: [
-        { text: "Goedkopewebsitelatenmaken", italicAccent: true },
+        { text: "Goed kope website laten maken", italicAccent: true },
       ],
     },
   ],
@@ -74,7 +74,7 @@ export const CTA_SECTION = {
   titleEm: "vandaag starten.",
   sub: "Plan een gratis kennismaking van 30 minuten — geen verplichtingen, gewoon een open gesprek over jouw website en doelen.",
   ctaLabel: "Neem contact op",
-  ctaHref: "mailto:info@goedkopewebsite-latenmaken.nl",
+  ctaHref: "mailto:info@groeimetwebdesign.nl",
 } as const;
 
 export const FOOTER_MISSION =

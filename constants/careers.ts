@@ -96,7 +96,7 @@ export const CAREERS_ROLES_SECTION = {
   sub: "We werven bewust. Zie je geen passende rol? Stuur ons toch een berichtje — we houden goede mensen warm voor wanneer het juiste project langskomt.",
   emptyState:
     "Op dit moment geen openstaande vacatures — maar we ontmoeten altijd graag getalenteerde mensen. Mail ons jouw portfolio en we houden je in gedachten.",
-  generalApplyEmail: "info@goedkopewebsite-latenmaken.nl",
+  generalApplyEmail: "info@groeimetwebdesign.nl",
 } as const;
 
 export const CAREERS_ROLES: readonly CareerRole[] = [
@@ -108,7 +108,7 @@ export const CAREERS_ROLES: readonly CareerRole[] = [
     type: "Fulltime",
     summary:
       "Verantwoordelijk voor het ontwerp van onderzoek tot live pixels, op twee à drie projecten tegelijk. Je werkt in Figma en hebt een mening over hoe het in code wordt opgeleverd.",
-    applyEmail: "info@goedkopewebsite-latenmaken.nl",
+    applyEmail: "info@groeimetwebdesign.nl",
   },
   {
     id: "senior-fullstack-engineer",
@@ -118,7 +118,7 @@ export const CAREERS_ROLES: readonly CareerRole[] = [
     type: "Fulltime",
     summary:
       "Next.js, TypeScript, Postgres. Je schrijft code waar andere developers van willen leren en geeft net zoveel om het datamodel als om de hover-state.",
-    applyEmail: "info@goedkopewebsite-latenmaken.nl",
+    applyEmail: "info@groeimetwebdesign.nl",
   },
   {
     id: "growth-strategist",
@@ -128,6 +128,6 @@ export const CAREERS_ROLES: readonly CareerRole[] = [
     type: "Fulltime",
     summary:
       "Leidt strategie voor SEO, content en analytics. Je houdt 's ochtends een gesprek met een CMO en schrijft 's middags de funnel-analyse.",
-    applyEmail: "info@goedkopewebsite-latenmaken.nl",
+    applyEmail: "info@groeimetwebdesign.nl",
   },
 ];

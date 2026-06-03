@@ -49,7 +49,7 @@ export function Footer() {
               </div>
 
               <a
-                href="mailto:info@goedkopewebsite-latenmaken.nl"
+                href="mailto:info@groeimetwebdesign.nl"
                 className="flex items-center gap-3 group w-fit transition-colors duration-300 hover:text-(--color-accent)"
                 aria-label="Stuur ons een e-mail"
               >
@@ -67,7 +67,7 @@ export function Footer() {
                   <path d="m22 6-10 7L2 6" />
                 </svg>
                 <span className="font-medium text-(--color-text) group-hover:text-(--color-accent) transition-colors duration-300">
-                  info@goedkopewebsite-latenmaken.nl
+                  info@groeimetwebdesign.nl
                 </span>
               </a>
             </div>
