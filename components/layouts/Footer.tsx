@@ -43,8 +43,7 @@ export function Footer() {
                     Gevestigd in Nederland
                   </span>
                   <span className="text-xs text-(--color-text-muted)">
-                    {/* TODO: vul echte vestigingsgegevens in (straat, postcode, plaats) */}
-                    Bezoek alleen op afspraak
+                    Nederland · Bezoek alleen op afspraak
                   </span>
                 </div>
               </div>

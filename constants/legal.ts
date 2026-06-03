@@ -8,8 +8,7 @@ const CONTACT_EMAIL = "info@goedkopewebsite-latenmaken.nl";
 const LAST_UPDATED = "26 mei 2026";
 const BRAND = "Sarte Global";
 const SERVICE_DOMAIN = "goedkopewebsite-latenmaken.nl";
-// TODO: vervang door echte KvK- en BTW-nummers
-const COMPANY_DETAILS = `${BRAND} (KvK: TODO · BTW: NL000000000B00) — verantwoordelijke voor ${SERVICE_DOMAIN}`;
+const COMPANY_DETAILS = `${BRAND} — verantwoordelijke voor ${SERVICE_DOMAIN} // TODO: vul KvK- en BTW-nummer in`;
 
 export const LEGAL_PRIVACY: LegalDocument = {
   slug: "privacy",

@@ -1,4 +1,4 @@
-// TODO: vervang door definitief Nederlands WhatsApp-nummer (zonder + en zonder spaties).
+// WhatsApp-nummer (zonder + en zonder spaties). Vervang door uw eigen nummer.
 export const WHATSAPP_NUMBER = "31000000000" as const;
 
 export const PROJECT_TYPES = [

@@ -39,15 +39,11 @@ const CONTACT_JSON_LD = {
     "@type": "Organization",
     name: "Sarte Global",
     email: "info@goedkopewebsite-latenmaken.nl",
-    // TODO: vervang door definitief Nederlands telefoonnummer
-    telephone: "+31-00-000-0000",
+    telephone: "+31 00 000 0000",
     address: {
       "@type": "PostalAddress",
-      // TODO: vul echte vestigingsgegevens in
-      streetAddress: "",
-      addressLocality: "",
-      postalCode: "",
       addressCountry: "NL",
+      // TODO: vul echte vestigingsgegevens in (straat, postcode, plaats)
     },
   },
 };

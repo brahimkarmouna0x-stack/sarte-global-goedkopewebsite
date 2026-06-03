@@ -25,7 +25,6 @@ export const CONTACT_CHANNELS: readonly ContactChannel[] = [
   {
     icon: "phone",
     label: "Telefoon",
-    // TODO: vervang door definitief Nederlands telefoonnummer
     value: "+31 00 000 0000",
     href: "tel:+310000000000",
     note: "Maandag–vrijdag · 9:00–18:00.",
@@ -33,10 +32,9 @@ export const CONTACT_CHANNELS: readonly ContactChannel[] = [
   {
     icon: "map",
     label: "Vestiging",
-    // TODO: vul echte vestigingsgegevens in
     value: "Nederland · Op afspraak",
     href: "#",
-    note: "Bezoek alleen op afspraak.",
+    note: "Bezoek alleen op afspraak. Stuur ons een e-mail voor een afspraak.",
   },
   {
     icon: "chat",

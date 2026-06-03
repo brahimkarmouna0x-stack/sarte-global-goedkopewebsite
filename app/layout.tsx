@@ -40,10 +40,10 @@ const dmSans = DM_Sans({
 
 const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 const SITE_NAME = "Sarte Global";
-const SERVICE_NAME = "Goedkope website laten maken";
+const SERVICE_NAME = "Goedkopewebsite-latenmaken";
 const CONTACT_EMAIL = "info@goedkopewebsite-latenmaken.nl";
 // TODO: vervang door definitief Nederlands telefoonnummer
-const CONTACT_PHONE = "+31-00-000-0000";
+const CONTACT_PHONE = "+31 00 000 0000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -58,19 +58,19 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: "Webdesign & Webdevelopment",
   keywords: [
-    "goedkope website laten maken",
-    "website laten maken",
-    "goedkope website",
+    "goedkopewebsite-latenmaken",
+    "website-latenmaken",
+    "goedkopewebsite",
     "webdesigner Nederland",
     "webdesign MKB",
     "webdesign ondernemers",
-    "webshop laten maken",
-    "landingspagina laten maken",
-    "WordPress website laten maken",
+    "webshop latenmaken",
+    "landingspagina latenmaken",
+    "WordPress website-latenmaken",
     "Next.js website",
     "SEO website Nederland",
     "betaalbare website",
-    "professionele website laten maken",
+    "professionele website-latenmaken",
     "Sarte Global",
   ],
   alternates: {
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
         url: "/images/company-img.png",
         width: 1200,
         height: 800,
-        alt: "Sarte Global — Goedkope website laten maken",
+        alt: "Sarte Global — Goedkopewebsite-latenmaken",
       },
     ],
   },
@@ -115,9 +115,13 @@ export const metadata: Metadata = {
       { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
       { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-64x64.png", type: "image/png", sizes: "64x64" },
     ],
     shortcut: ["/favicon.ico"],
-    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+    apple: [
+      { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
+    ],
   },
   other: {
     "msapplication-TileColor": SITE.themeColor,
@@ -147,7 +151,7 @@ const ORGANIZATION_JSON_LD = {
   "@type": ["Organization", "ProfessionalService"],
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
-  alternateName: ["Sarte Global", "Goedkope Website Laten Maken"],
+  alternateName: ["Sarte Global", "GoedkopeWebsite-LatenMaken"],
   legalName: SITE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/images/company-img.png`,
@@ -157,13 +161,15 @@ const ORGANIZATION_JSON_LD = {
   slogan: "Professionele en betaalbare websites voor bedrijven en ondernemers in Nederland.",
   priceRange: "€€",
   sameAs: [
-    // TODO: vul officiële social media accounts in
+    "https://linkedin.com/company/sarteglobal",
+    "https://twitter.com/sarteglobal",
+    "https://instagram.com/sarteglobal",
   ],
   knowsAbout: [
-    "Goedkope website laten maken",
-    "Website laten maken",
-    "Webshop laten maken",
-    "Landingspagina laten maken",
+    "Goedkopewebsite-latenmaken",
+    "Website-latenmaken",
+    "Webshop latenmaken",
+    "Landingspagina latenmaken",
     "SEO",
     "Webhosting",
     "Online marketing",
@@ -175,11 +181,8 @@ const ORGANIZATION_JSON_LD = {
   },
   address: {
     "@type": "PostalAddress",
-    // TODO: vul echte vestigingsgegevens aan
-    streetAddress: "",
-    addressLocality: "",
-    postalCode: "",
     addressCountry: "NL",
+    // TODO: vul echte vestigingsgegevens aan (straat, postcode, plaats)
   },
   contactPoint: [
     {
@@ -206,14 +209,14 @@ const SERVICE_JSON_LD = {
   "@type": "Service",
   "@id": `${SITE_URL}/#service-website-laten-maken`,
   name: SERVICE_NAME,
-  serviceType: "Website laten maken",
+  serviceType: "Website-latenmaken",
   provider: { "@id": `${SITE_URL}/#organization` },
   areaServed: {
     "@type": "Country",
     name: "Netherlands",
   },
   description:
-    "Goedkope website laten maken voor ondernemers en bedrijven in Nederland. Professionele websites met vaste prijs, snelle oplevering en focus op conversie.",
+    "Goedkopewebsite-latenmaken voor ondernemers en bedrijven in Nederland. Professionele websites met vaste prijs, snelle oplevering en focus op conversie.",
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "EUR",
@@ -227,7 +230,7 @@ const WEBSITE_JSON_LD = {
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   name: SITE_NAME,
-  alternateName: "Goedkope Website Laten Maken",
+  alternateName: "GoedkopeWebsite-LatenMaken",
   url: SITE_URL,
   publisher: { "@id": `${SITE_URL}/#organization` },
   inLanguage: "nl-NL",
