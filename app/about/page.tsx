@@ -10,7 +10,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 
 const PAGE_TITLE = "Over ons — betaalbare websites voor ondernemers";
 const PAGE_DESC =
-  "Sarte Global is het bureau achter goedkopewebsite-latenmaken.nl. We bouwen professionele en betaalbare websites voor ondernemers en bedrijven in Nederland.";
+  "Sarte Global is het bureau achter Goedkopewebsitelatenmaken. We bouwen professionele en betaalbare websites voor ondernemers en bedrijven in Nederland.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

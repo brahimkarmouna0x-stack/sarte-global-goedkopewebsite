@@ -6,24 +6,32 @@
  * Source : public/images/logo.png  (512x512, transparent)
  * Output : public/  (favicons, touch icons, android-chrome, mstile, ico)
  *
- * OPTIMIZATION (2026-06-03):
+ * OPTIMIZATION (2026-06-03, rev 2):
  * ─────────────────────────────
  * 1. Trim transparent edges from source logo before any resize.
- *    The original 512×512 logo had 40px top + 63px bottom of empty space,
- *    causing the actual mark to occupy only ~63 % of the 32×32 favicon.
+ *    The current source (public/images/logo.png) is 1000×800 and already
+ *    tightly trimmed (content fills 99 %). It is a LANDSCAPE 1.26:1 emblem.
  *
- * 2. Reduce padding aggressively:
- *    - Browser favicons:  2–3 %  (logo fills 94–96 % of canvas)
- *    - Apple touch icon:  6 %    (safe for iOS rounding)
- *    - Android/PWA:       3 %
- *    - Maskable:         15 %    (keeps logo inside the mask safe-zone)
- *    - Windows tile:      8 %
+ * 2. Root cause of "favicon looks small": a 1.26:1 (wider-than-tall) emblem
+ *    placed in a SQUARE canvas with `fit: contain` matches the width and
+ *    letterboxes the height. With the previous 2–3 % padding the mark filled
+ *    only ~75 % of the favicon HEIGHT (≈70 % bbox area) — read as "small".
  *
- * 3. Browser-tab "sharp" variants are generated with gamma + sharpen
+ * 3. Padding is now pushed to the maximum safe value per surface so the mark
+ *    reaches its aspect-ratio ceiling (width ≈100 %, height ≈79 %):
+ *    - Browser favicons:  0 %   (mark fills full width, ~79 % height)
+ *    - Android/PWA "any":  1 %
+ *    - Apple touch icon:   2 %   (iOS only rounds corners; emblem is circular)
+ *    - Windows tile:       5 %
+ *    - Maskable:          11 %   (keeps the circular mark within the 80 % safe-zone)
+ *
+ * 4. Browser-tab "sharp" variants are generated with gamma + sharpen
  *    for extra crispness at 16px.
  *
- * 4. Aspect ratio is always preserved (sharp `fit: contain`).
+ * 5. Aspect ratio is always preserved (sharp `fit: contain`).
  *    Logo is centered — nothing is ever stretched, distorted, or cropped.
+ *    NOTE: ~79 % height is the geometric ceiling for this landscape emblem in
+ *    a square icon. A further jump requires a square-framed source logo.
  */
 
 import { fileURLToPath } from "node:url";
@@ -185,26 +193,26 @@ async function main() {
   // Gamma + sharpen for crisp rendering at tiny sizes.
   console.log("\n── Browser tab favicons ──");
   await writePng("favicon-16x16.png", 16, {
-    padding: 0.02,
+    padding: 0,
     sharpen: true,
     gamma: true,
   });
   await writePng("favicon-32x32.png", 32, {
-    padding: 0.03,
+    padding: 0,
     sharpen: true,
     gamma: true,
   });
   await writePng("favicon-48x48.png", 48, {
-    padding: 0.03,
+    padding: 0,
     sharpen: true,
     gamma: true,
   });
   await writePng("favicon-64x64.png", 64, {
-    padding: 0.03,
+    padding: 0,
     sharpen: true,
     gamma: true,
   });
-  await writeIco("favicon.ico", [16, 32, 48, 64], { padding: 0.03 });
+  await writeIco("favicon.ico", [16, 32, 48, 64], { padding: 0 });
 
   // ── Apple touch icon ──────────────────────────────────────────────
   // Opaque (iOS ignores transparency and applies its own mask).
@@ -212,32 +220,35 @@ async function main() {
   console.log("\n── Apple touch icon ──");
   await writePng("apple-touch-icon.png", 180, {
     bg: BRAND_BG,
-    padding: 0.06,
+    padding: 0.02,
   });
 
   // ── Android / PWA (transparent "any" purpose) ────────────────────
   console.log("\n── Android / PWA ──");
-  await writePng("android-chrome-192x192.png", 192, { padding: 0.03 });
-  await writePng("android-chrome-512x512.png", 512, { padding: 0.03 });
+  await writePng("android-chrome-192x192.png", 192, { padding: 0.01 });
+  await writePng("android-chrome-512x512.png", 512, { padding: 0.01 });
 
   // ── Maskable (brand bg, respects the ~20% safe-zone) ─────────────
+  // 11% padding => mark width ≈ 78% of canvas, just inside the 80% safe circle.
   console.log("\n── Maskable ──");
   await writePng("maskable-icon-192x192.png", 192, {
     bg: BRAND_BG,
-    padding: 0.15,
+    padding: 0.11,
   });
   await writePng("maskable-icon-512x512.png", 512, {
     bg: BRAND_BG,
-    padding: 0.15,
+    padding: 0.11,
   });
 
   // ── Windows tile ──────────────────────────────────────────────────
   console.log("\n── Windows tile ──");
-  await writePng("mstile-150x150.png", 150, { bg: BRAND_BG, padding: 0.08 });
+  await writePng("mstile-150x150.png", 150, { bg: BRAND_BG, padding: 0.05 });
 
   // ── Summary ───────────────────────────────────────────────────────
   console.log("\n✓ All icons regenerated from trimmed source.");
-  console.log("  Logo now fills ~94–96 % of browser favicon canvases.");
+  console.log(
+    "  Browser favicons: logo fills 100 % width / ~79 % height (aspect-ratio ceiling).",
+  );
 }
 
 main().catch((err) => {

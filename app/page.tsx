@@ -24,10 +24,10 @@ const HOMEPAGE_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": `${SITE_URL}/#service`,
-  name: "Sarte Global — Goedkope website laten maken",
+  name: "Sarte Global — Goedkopewebsitelatenmaken",
   url: SITE_URL,
   description:
-    "Goedkope website laten maken voor ondernemers en bedrijven in Nederland. Professionele websites, snelle oplevering en betaalbare prijzen door Sarte Global.",
+    "Goedkopewebsitelatenmaken bouwt professionele en betaalbare websites voor ondernemers en bedrijven in Nederland. Snelle oplevering en vaste prijzen door Sarte Global.",
   priceRange: "€€",
   areaServed: {
     "@type": "Country",

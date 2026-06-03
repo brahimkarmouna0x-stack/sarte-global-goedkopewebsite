@@ -7,7 +7,7 @@ import { CONTACT_HERO } from "@/constants/contact-page";
 
 const PAGE_TITLE = "Contact — Neem contact op met Sarte Global";
 const PAGE_DESC =
-  "Neem contact op met Sarte Global voor een goedkope website laten maken. E-mail, telefoon of WhatsApp — we reageren binnen één werkdag.";
+  "Neem contact op met Sarte Global, het team achter Goedkopewebsitelatenmaken. E-mail, telefoon of WhatsApp — we reageren binnen één werkdag.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

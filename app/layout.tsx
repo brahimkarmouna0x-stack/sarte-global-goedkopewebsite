@@ -40,7 +40,7 @@ const dmSans = DM_Sans({
 
 const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 const SITE_NAME = "Sarte Global";
-const SERVICE_NAME = "Goedkopewebsite-latenmaken";
+const SERVICE_NAME = "Goedkopewebsitelatenmaken";
 const CONTACT_EMAIL = "info@goedkopewebsite-latenmaken.nl";
 // TODO: vervang door definitief Nederlands telefoonnummer
 const CONTACT_PHONE = "+31 00 000 0000";
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: "Webdesign & Webdevelopment",
   keywords: [
-    "goedkopewebsite-latenmaken",
+    "goedkopewebsitelatenmaken",
     "website-latenmaken",
     "goedkopewebsite",
     "webdesigner Nederland",
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
         url: "/images/company-img.png",
         width: 1200,
         height: 800,
-        alt: "Sarte Global — Goedkopewebsite-latenmaken",
+        alt: "Sarte Global — Goedkopewebsitelatenmaken",
       },
     ],
   },
@@ -112,20 +112,20 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
-      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
-      { url: "/favicon-64x64.png", type: "image/png", sizes: "64x64" },
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/favicon-16x16.png?v=2", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48x48.png?v=2", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-64x64.png?v=2", type: "image/png", sizes: "64x64" },
     ],
-    shortcut: ["/favicon.ico"],
+    shortcut: ["/favicon.ico?v=2"],
     apple: [
-      { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
+      { url: "/apple-touch-icon.png?v=2", type: "image/png", sizes: "180x180" },
     ],
   },
   other: {
     "msapplication-TileColor": SITE.themeColor,
-    "msapplication-TileImage": "/mstile-150x150.png",
+    "msapplication-TileImage": "/mstile-150x150.png?v=2",
     "msapplication-config": "/browserconfig.xml",
   },
   formatDetection: {
@@ -151,7 +151,7 @@ const ORGANIZATION_JSON_LD = {
   "@type": ["Organization", "ProfessionalService"],
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
-  alternateName: ["Sarte Global", "GoedkopeWebsite-LatenMaken"],
+  alternateName: ["Sarte Global", "Goedkopewebsitelatenmaken"],
   legalName: SITE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/images/company-img.png`,
@@ -166,7 +166,7 @@ const ORGANIZATION_JSON_LD = {
     "https://instagram.com/sarteglobal",
   ],
   knowsAbout: [
-    "Goedkopewebsite-latenmaken",
+    "Goedkopewebsitelatenmaken",
     "Website-latenmaken",
     "Webshop latenmaken",
     "Landingspagina latenmaken",
@@ -216,7 +216,7 @@ const SERVICE_JSON_LD = {
     name: "Netherlands",
   },
   description:
-    "Goedkopewebsite-latenmaken voor ondernemers en bedrijven in Nederland. Professionele websites met vaste prijs, snelle oplevering en focus op conversie.",
+    "Goedkopewebsitelatenmaken voor ondernemers en bedrijven in Nederland. Professionele websites met vaste prijs, snelle oplevering en focus op conversie.",
   offers: {
     "@type": "AggregateOffer",
     priceCurrency: "EUR",
@@ -230,7 +230,7 @@ const WEBSITE_JSON_LD = {
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   name: SITE_NAME,
-  alternateName: "GoedkopeWebsite-LatenMaken",
+  alternateName: "Goedkopewebsitelatenmaken",
   url: SITE_URL,
   publisher: { "@id": `${SITE_URL}/#organization` },
   inLanguage: "nl-NL",

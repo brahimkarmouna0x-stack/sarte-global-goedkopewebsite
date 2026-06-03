@@ -16,7 +16,7 @@ export function AboutCompany() {
       itemType="https://schema.org/Organization"
     >
       <meta itemProp="name" content={ABOUT_COMPANY.brand} />
-      <meta itemProp="alternateName" content="Goedkope website laten maken" />
+      <meta itemProp="alternateName" content="Goedkopewebsitelatenmaken" />
       <meta itemProp="url" content="https://goedkopewebsite-latenmaken.nl" />
 
       <div className="about-company__grid" aria-hidden="true" />

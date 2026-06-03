@@ -7,16 +7,16 @@ import type {
 } from "@/types";
 
 export const SITE = {
-  title: "Goedkope Website Laten Maken | Professionele Websites - Sarte Global",
+  title: "Goedkopewebsitelatenmaken | Professionele Websites - Sarte Global",
   description:
-    "Goedkope website laten maken voor ondernemers en bedrijven in Nederland. Professionele websites, snelle oplevering en betaalbare prijzen door Sarte Global.",
+    "Goedkopewebsitelatenmaken bouwt professionele en betaalbare websites voor ondernemers en bedrijven in Nederland. Snelle oplevering en vaste prijzen door Sarte Global.",
   themeColor: "#0D0D0D",
   brandName: "SARTE GLOBAL",
   brandAccent: ".",
 } as const satisfies SiteMeta;
 
 export const TRUST_LINE =
-  "goedkopewebsite-latenmaken.nl is een dienst van Sarte Global." as const;
+  "Goedkopewebsitelatenmaken is een dienst van Sarte Global." as const;
 
 export const NAV_LINKS = [
   { label: "Sarte Global", href: "/" },
@@ -38,14 +38,7 @@ export const HERO = {
   title: [
     {
       words: [
-        { text: "Goedkope" },
-        { text: "website" },
-      ],
-    },
-    {
-      words: [
-        { text: "laten" },
-        { text: "maken", italicAccent: true },
+        { text: "Goedkopewebsitelatenmaken", italicAccent: true },
       ],
     },
   ],
@@ -60,7 +53,7 @@ export const HERO = {
   ],
   scrollLabel: "Scroll",
   badgeText:
-    "GOEDKOPE WEBSITE LATEN MAKEN · SARTE GLOBAL · GOEDKOPE WEBSITE LATEN MAKEN · SARTE GLOBAL · ",
+    "GOEDKOPEWEBSITELATENMAKEN · SARTE GLOBAL · GOEDKOPEWEBSITELATENMAKEN · SARTE GLOBAL · ",
 } as const satisfies HeroContent;
 
 export const TRUSTED_LABEL = "Vertrouwd door Nederlandse ondernemers" as const;

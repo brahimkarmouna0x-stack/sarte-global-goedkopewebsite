@@ -11,7 +11,7 @@ export const ABOUT_COMPANY = {
     "Binnen bij Sarte Global — onze werkplek waar goedkope websites worden gebouwd voor ondernemers en bedrijven in Nederland.",
   mediaCaption: "Sarte Global · Nederland",
   lead:
-    "Sarte Global is het bureau achter goedkopewebsite-latenmaken.nl. We bouwen professionele en betaalbare websites voor ondernemers en bedrijven in Nederland, met een focus op snelle oplevering, vaste prijzen en meetbare resultaten.",
+    "Sarte Global is het bureau achter Goedkopewebsitelatenmaken. We bouwen professionele en betaalbare websites voor ondernemers en bedrijven in Nederland, met een focus op snelle oplevering, vaste prijzen en meetbare resultaten.",
   paragraphs: [
     "Sarte Global is opgericht met één duidelijk doel: elke Nederlandse ondernemer een professionele website geven zonder de torenhoge prijzen van traditionele bureaus. Onze ervaren designers en developers werken vanaf dag één samen — geen overdrachten, geen verborgen kosten, alleen werk dat live gaat.",
     "Naast websites bouwt Sarte Global webshops, landingspagina's en complete digitale groeitrajecten — denk aan SEO, online marketing, AI-oplossingen en hosting. Eén partner voor jouw digitale aanwezigheid, gegroeid mee met jouw bedrijf.",
