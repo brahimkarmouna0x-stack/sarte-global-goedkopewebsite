@@ -9,7 +9,7 @@ import { ServiceRelatedProjects } from "@/components/services/ServiceRelatedProj
 import { ServiceTech } from "@/components/services/ServiceTech";
 import { SERVICES } from "@/constants";
 
-const SITE_URL = "https://groeimetwebdesign.nl";
+const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;

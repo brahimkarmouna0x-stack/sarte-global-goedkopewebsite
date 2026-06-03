@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { SERVICES } from "@/constants";
 
-const SITE_URL = "https://groeimetwebdesign.nl";
+const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 const LAST_MODIFIED = "2026-06-03";
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const SITE_URL = "https://groeimetwebdesign.nl";
+const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 
 const HOMEPAGE_JSON_LD = {
   "@context": "https://schema.org",

@@ -34,8 +34,8 @@ export function ContactPageBody() {
               <p>
                 We reageren binnenkort vanuit hetzelfde gesprek. Werkt de
                 doorverwijzing niet? Stuur ons een e-mail op{" "}
-                <a href="mailto:info@groeimetwebdesign.nl">
-                  info@groeimetwebdesign.nl
+                <a href="mailto:info@goedkopewebsite-latenmaken.nl">
+                  info@goedkopewebsite-latenmaken.nl
                 </a>
                 .
               </p>

@@ -29,7 +29,7 @@ export default function Error({ error, reset }: ErrorPageProps) {
           <button type="button" onClick={reset} className="btn btn-primary btn-large">
             Probeer opnieuw
           </button>
-          <a href="mailto:info@groeimetwebdesign.nl" className="btn btn-ghost btn-large">
+          <a href="mailto:info@goedkopewebsite-latenmaken.nl" className="btn btn-ghost btn-large">
             Meld dit probleem
           </a>
         </div>

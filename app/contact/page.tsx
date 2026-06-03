@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SITE_URL = "https://groeimetwebdesign.nl";
+const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 
 const CONTACT_JSON_LD = {
   "@context": "https://schema.org",
@@ -38,7 +38,7 @@ const CONTACT_JSON_LD = {
   mainEntity: {
     "@type": "Organization",
     name: "Sarte Global",
-    email: "info@groeimetwebdesign.nl",
+    email: "info@goedkopewebsite-latenmaken.nl",
     telephone: "+31 00 000 0000",
     address: {
       "@type": "PostalAddress",

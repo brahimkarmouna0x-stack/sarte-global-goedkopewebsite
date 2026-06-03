@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://groeimetwebdesign.nl";
+const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
 
 export default function robots(): MetadataRoute.Robots {
   return {
