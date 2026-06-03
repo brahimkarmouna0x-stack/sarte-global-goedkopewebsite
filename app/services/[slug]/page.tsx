@@ -44,11 +44,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       description,
       url: canonical,
       type: "website",
+      images: [{ url: "/images/company-img.png", width: 1200, height: 800, alt: `${title} · Sarte Global` }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${title} · Sarte Global`,
       description,
+      images: ["/images/company-img.png"],
     },
   };
 }

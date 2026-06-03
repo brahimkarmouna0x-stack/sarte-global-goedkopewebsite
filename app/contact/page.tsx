@@ -5,7 +5,7 @@ import { ContactPageBody } from "@/components/contact/ContactPageBody";
 import { PageHero } from "@/components/page/PageHero";
 import { CONTACT_HERO } from "@/constants/contact-page";
 
-const PAGE_TITLE = "Contact";
+const PAGE_TITLE = "Contact — Neem contact op met Sarte Global";
 const PAGE_DESC =
   "Neem contact op met Sarte Global voor een goedkope website laten maken. E-mail, telefoon of WhatsApp — we reageren binnen één werkdag.";
 
@@ -14,14 +14,15 @@ export const metadata: Metadata = {
   description: PAGE_DESC,
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
     url: "/contact",
     type: "website",
+    images: [{ url: "/images/company-img.png", width: 1200, height: 800, alt: PAGE_TITLE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
   },
 };

@@ -8,7 +8,7 @@ import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { NEWSLETTER } from "@/constants";
 
-const PAGE_TITLE = "Journal";
+const PAGE_TITLE = "Journal — Tips over websites, SEO en online groei";
 const PAGE_DESC =
   "Inzichten van Sarte Global: tips over websites, SEO en online groei voor ondernemers — één beknopte e-mail per maand.";
 
@@ -17,14 +17,15 @@ export const metadata: Metadata = {
   description: PAGE_DESC,
   alternates: { canonical: "/journal" },
   openGraph: {
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
     url: "/journal",
     type: "website",
+    images: [{ url: "/images/company-img.png", width: 1200, height: 800, alt: PAGE_TITLE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
   },
 };

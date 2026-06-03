@@ -6,7 +6,7 @@ import { CallToAction } from "@/components/sections/CallToAction";
 import { ImpactStats } from "@/components/sections/ImpactStats";
 import { Testimonials } from "@/components/sections/Testimonials";
 
-const PAGE_TITLE = "Werk";
+const PAGE_TITLE = "Portfolio — Websites, webshops & design projecten";
 const PAGE_DESC =
   "Geselecteerd werk van Sarte Global. Websites, webshops en design voor ondernemers en bedrijven in Nederland en daarbuiten.";
 
@@ -15,14 +15,15 @@ export const metadata: Metadata = {
   description: PAGE_DESC,
   alternates: { canonical: "/work" },
   openGraph: {
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
     url: "/work",
     type: "website",
+    images: [{ url: "/images/company-img.png", width: 1200, height: 800, alt: PAGE_TITLE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
   },
 };

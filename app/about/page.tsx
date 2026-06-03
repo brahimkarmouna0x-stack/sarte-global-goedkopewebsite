@@ -8,7 +8,7 @@ import { Process } from "@/components/sections/Process";
 import { TeamShowcase } from "@/components/sections/TeamShowcase";
 import { Testimonials } from "@/components/sections/Testimonials";
 
-const PAGE_TITLE = "Over ons · Sarte Global";
+const PAGE_TITLE = "Over ons — betaalbare websites voor ondernemers";
 const PAGE_DESC =
   "Sarte Global is het bureau achter goedkopewebsite-latenmaken.nl. We bouwen professionele en betaalbare websites voor ondernemers en bedrijven in Nederland.";
 
@@ -17,14 +17,15 @@ export const metadata: Metadata = {
   description: PAGE_DESC,
   alternates: { canonical: "/about" },
   openGraph: {
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
     url: "/about",
     type: "website",
+    images: [{ url: "/images/company-img.png", width: 1200, height: 800, alt: PAGE_TITLE }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${PAGE_TITLE} · Sarte Global`,
+    title: PAGE_TITLE,
     description: PAGE_DESC,
   },
 };
