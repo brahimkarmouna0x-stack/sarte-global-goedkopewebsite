@@ -1,7 +1,7 @@
 /**
  * Favicon suite generator for Sarte Global.
  *
- * Source: public/images/logo.png (gold mark on transparent background).
+ * Source: public/images/logo.svg (gold mark on transparent background).
  * Output: public/favicon/* plus root-level favicon.ico & apple-touch-icon.png
  *         for fixed-path discovery by browsers/crawlers.
  *
@@ -24,10 +24,12 @@ const DARK = "#0D0D0D";
 const GOLD = "#C8A848";
 const TRANSPARENT = { r: 0, g: 0, b: 0, alpha: 0 };
 
-const SRC = join(PUBLIC, "images", "logo.png");
+const SRC = join(PUBLIC, "images", "logo.svg");
 
 /** Trim the transparent margin off the source once and reuse it. */
 async function loadTrimmedLogo() {
+  // The SVG declares an intrinsic 1993x1550 px, which sharp rasterizes at — ~4x the
+  // largest (512px) icon, so every size stays crisp without forcing a higher density.
   return sharp(SRC)
     .ensureAlpha()
     .trim({ threshold: 1 })

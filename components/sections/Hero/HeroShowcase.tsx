@@ -105,8 +105,8 @@ export function HeroShowcase() {
               src={current.image}
               alt={current.imageAlt}
               fill
-              priority={index === 0}
-              fetchPriority={index === 0 ? "high" : "auto"}
+              priority
+              fetchPriority="high"
               sizes="(max-width: 980px) 92vw, 560px"
               quality={78}
               className="hero-showcase__image"

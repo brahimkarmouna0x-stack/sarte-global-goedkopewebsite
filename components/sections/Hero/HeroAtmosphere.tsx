@@ -22,8 +22,8 @@ export function HeroAtmosphere() {
           src={current.image}
           alt=""
           fill
-          priority={index === 0}
-          fetchPriority={index === 0 ? "high" : "auto"}
+          priority
+          fetchPriority="high"
           sizes="100vw"
           quality={70}
           className="hero-backdrop__image"
