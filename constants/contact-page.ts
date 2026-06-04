@@ -18,8 +18,8 @@ export const CONTACT_CHANNELS: readonly ContactChannel[] = [
   {
     icon: "mail",
     label: "E-mail",
-    value: "info@goedkopewebsite-latenmaken.nl",
-    href: "mailto:info@goedkopewebsite-latenmaken.nl",
+    value: "info@groeimetwebdesign.nl",
+    href: "mailto:info@groeimetwebdesign.nl",
     note: "Het beste voor offertes en uitgebreide briefings.",
   },
   {

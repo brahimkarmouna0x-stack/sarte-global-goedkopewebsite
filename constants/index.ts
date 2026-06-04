@@ -74,7 +74,7 @@ export const CTA_SECTION = {
   titleEm: "vandaag starten.",
   sub: "Plan een gratis kennismaking van 30 minuten — geen verplichtingen, gewoon een open gesprek over jouw website en doelen.",
   ctaLabel: "Neem contact op",
-  ctaHref: "mailto:info@goedkopewebsite-latenmaken.nl",
+  ctaHref: "mailto:info@groeimetwebdesign.nl",
 } as const;
 
 export const FOOTER_MISSION =

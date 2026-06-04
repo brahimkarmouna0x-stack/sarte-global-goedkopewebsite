@@ -4,10 +4,10 @@
 
 import type { LegalDocument } from "@/types";
 
-const CONTACT_EMAIL = "info@goedkopewebsite-latenmaken.nl";
+const CONTACT_EMAIL = "info@groeimetwebdesign.nl";
 const LAST_UPDATED = "26 mei 2026";
 const BRAND = "Sarte Global";
-const SERVICE_DOMAIN = "goedkopewebsite-latenmaken.nl";
+const SERVICE_DOMAIN = "groeimetwebdesign.nl";
 const COMPANY_DETAILS = `${BRAND} — verantwoordelijke voor ${SERVICE_DOMAIN} // TODO: vul KvK- en BTW-nummer in`;
 
 export const LEGAL_PRIVACY: LegalDocument = {

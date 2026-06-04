@@ -38,10 +38,10 @@ const dmSans = DM_Sans({
   preload: true,
 });
 
-const SITE_URL = "goedkopewebsite-latenmaken.nl";
+const SITE_URL = "https://groeimetwebdesign.nl";
 const SITE_NAME = "Sarte Global";
 const SERVICE_NAME = "Goedkopewebsitelatenmaken";
-const CONTACT_EMAIL = "info@goedkopewebsite-latenmaken.nl";
+const CONTACT_EMAIL = "info@groeimetwebdesign.nl";
 // TODO: vervang door definitief Nederlands telefoonnummer
 const CONTACT_PHONE = "+31 00 000 0000";
 

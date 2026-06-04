@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://goedkopewebsite-latenmaken.nl";
+const SITE_URL = "https://groeimetwebdesign.nl";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        disallow: ["/api/", "_next/"],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
